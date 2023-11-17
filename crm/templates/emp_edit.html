@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+
+{%block body_block%}
+
+<div class="container">
+    <form action="" method="post">
+       
+        {%csrf_token%}
+        {{form.as_p}}
+
+        <button type="submit">Change</button>
+    </form>
+</div>
+
+{%endblock%}
